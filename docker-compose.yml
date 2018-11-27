@@ -1,0 +1,9 @@
+# image not found? login using "docker login --username=abc --password=abc https://registry.domain.de"
+services: 
+  pheonix-cloudeureka: 
+    container_name: pheonix-cloudeureka
+    image: "praveenit219/pheonix-cloudeureka:latest"
+    network_mode: host
+    ports: 
+      - "10802:10802"
+version: "3"
